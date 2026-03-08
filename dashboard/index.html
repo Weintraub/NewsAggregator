@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Signal · Daily Digest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #020617;
+      --surface:  #050D1A;
+      --border:   #0F172A;
+      --muted:    #1E293B;
+      --text:     #CBD5E1;
+      --subtext:  #475569;
+      --accent:   #3B82F6;
+      --hn:       #FF6600;
+      --lb:       #AC130D;
+      --tc:       #0A9828;
+      --green:    #22C55E;
+    }
+
+    html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'IBM Plex Mono', monospace; }
+
+    /* ── Layout ── */
+    .shell       { display: flex; flex-direction: column; height: 100vh; }
+    .topbar      { background: var(--surface); border-bottom: 1px solid var(--border); padding: 18px 32px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+    .statusbar   { background: #070F1C; border-bottom: 1px solid var(--border); padding: 8px 32px; display: flex; gap: 24px; align-items: center; flex-shrink: 0; }
+    .body        { display: flex; flex: 1; overflow: hidden; }
+    .sidebar     { width: 320px; border-right: 1px solid var(--border); overflow-y: auto; background: #030A14; flex-shrink: 0; }
+    .main        { flex: 1; overflow-y: auto; padding: 32px; }
+
+    /* ── Header ── */
+    .tag-pill    { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); font-weight: 700; display: flex; align-items: center; gap: 8px; }
+    .dot         { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+    h1           { font-size: 22px; font-weight: 700; color: #F1F5F9; letter-spacing: -0.02em; margin-top: 4px; }
+    .sub         { font-size: 11px; color: var(--subtext); margin-top: 2px; letter-spacing: 0.04em; }
+
+    /* ── Status bar ── */
+    .src-badge   { font-size: 11px; font-weight: 700; }
+    .src-count   { font-size: 10px; color: var(--subtext); }
+
+    /* ── Sidebar articles ── */
+    .article     { display: block; padding: 11px 14px; border-bottom: 1px solid #0A1628; text-decoration: none; transition: background 0.12s; }
+    .article:hover { background: #0A1628; }
+    .article-row { display: flex; gap: 8px; align-items: flex-start; }
+    .badge       { font-size: 9px; font-weight: 700; padding: 2px 5px; border-radius: 3px; letter-spacing: 0.1em; flex-shrink: 0; margin-top: 2px; }
+    .article-title { font-size: 11.5px; color: #94A3B8; line-height: 1.5; flex: 1; }
+    .article-pts { font-size: 10px; color: var(--subtext); margin-top: 3px; margin-left: 36px; }
+
+    /* ── Digest ── */
+    .digest-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+    .live-dot    { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+    .digest-date { font-size: 10px; letter-spacing: 0.15em; color: var(--green); text-transform: uppercase; }
+
+    .section-heading {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      color: #94A3B8; margin: 28px 0 10px; border-bottom: 1px solid var(--border); padding-bottom: 6px;
+    }
+    .bullet      { display: flex; gap: 10px; margin: 7px 0; align-items: flex-start; }
+    .chevron     { color: var(--accent); flex-shrink: 0; font-size: 15px; margin-top: 2px; }
+    .bullet-text { font-family: 'IBM Plex Serif', Georgia, serif; font-size: 14px; color: #CBD5E1; line-height: 1.65; }
+    .signal-text { font-family: 'IBM Plex Serif', Georgia, serif; font-size: 13px; color: #94A3B8; font-style: italic; line-height: 1.7; margin: 6px 0; }
+
+    /* ── Empty state ── */
+    .empty       { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: var(--muted); text-align: center; gap: 12px; }
+    .empty-icon  { font-size: 40px; opacity: 0.3; }
+    .empty-text  { font-size: 11px; letter-spacing: 0.15em; line-height: 2; }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 2px; }
+
+    /* ── Loading ── */
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+    .loading-dot { animation: pulse 1.2s infinite; }
+  </style>
+</head>
+<body>
+<div class="shell">
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div>
+      <div class="tag-pill"><div class="dot"></div>Tech Signal</div>
+      <h1>Daily Intelligence Digest</h1>
+      <p class="sub">HN · Lobste.rs · TechCrunch → Claude AI</p>
+    </div>
+    <div id="last-updated" style="font-size:11px;color:var(--subtext);text-align:right"></div>
+  </header>
+
+  <!-- Source status bar -->
+  <div class="statusbar" id="statusbar">
+    <span style="font-size:11px;color:var(--subtext)">Loading sources…</span>
+  </div>
+
+  <!-- Body -->
+  <div class="body">
+    <!-- Article list -->
+    <aside class="sidebar" id="sidebar">
+      <div class="empty">
+        <div class="empty-icon loading-dot">◈</div>
+        <div class="empty-text">LOADING ARTICLES…</div>
+      </div>
+    </aside>
+
+    <!-- Digest panel -->
+    <main class="main" id="main">
+      <div class="empty">
+        <div class="empty-icon loading-dot">◈</div>
+        <div class="empty-text">LOADING DIGEST…</div>
+      </div>
+    </main>
+  </div>
+
+</div>
+
+<script>
+const sourceColors = { HN: getComputedStyle(document.documentElement).getPropertyValue('--hn').trim() || '#FF6600',
+                       LB: '#AC130D', TC: '#0A9828' };
+
+async function loadDigest() {
+  let data;
+  try {
+    // In production on GitHub Pages, latest.json lives at ./digest-output/latest.json
+    const res = await fetch('./digest-output/latest.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    data = await res.json();
+  } catch (e) {
+    showError(e.message);
+    return;
+  }
+  render(data);
+}
+
+function render({ date, articles, digest, generated_at }) {
+  // Status bar
+  const counts = {};
+  for (const a of articles) counts[a.tag] = (counts[a.tag] || 0) + 1;
+  const srcDefs = [
+    { tag: 'HN', label: 'Hacker News',  color: '#FF6600' },
+    { tag: 'LB', label: 'Lobste.rs',    color: '#AC130D' },
+    { tag: 'TC', label: 'TechCrunch',   color: '#0A9828' },
+  ];
+  document.getElementById('statusbar').innerHTML = srcDefs.map(s => `
+    <span class="src-badge" style="color:${s.color}">${s.label}</span>
+    <span class="src-count">✓ ${counts[s.tag] || 0} articles</span>
+  `).join('<span style="color:#1E293B">|</span>');
+
+  // Last updated
+  const dt = new Date(generated_at);
+  document.getElementById('last-updated').innerHTML =
+    `Generated<br>${dt.toLocaleDateString()} ${dt.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}`;
+
+  // Sidebar
+  document.getElementById('sidebar').innerHTML = articles.map(a => `
+    <a class="article" href="${esc(a.url)}" target="_blank" rel="noopener">
+      <div class="article-row">
+        <span class="badge" style="background:${sourceColors[a.tag]}22;color:${sourceColors[a.tag]}">${esc(a.tag)}</span>
+        <span class="article-title">${esc(a.title)}</span>
+      </div>
+      ${a.points != null ? `<div class="article-pts">↑ ${a.points}</div>` : ''}
+    </a>
+  `).join('');
+
+  // Digest
+  const meta = `<div class="digest-meta">
+    <div class="live-dot"></div>
+    <span class="digest-date">Digest · ${date} · ${articles.length} articles analysed</span>
+  </div>`;
+  document.getElementById('main').innerHTML = meta + parseDigest(digest);
+}
+
+function parseDigest(text) {
+  return text.split('\n').map(line => {
+    line = line.trim();
+    if (!line) return '';
+    if (line.startsWith('## ')) {
+      return `<div class="section-heading">${esc(line.slice(3))}</div>`;
+    }
+    if (line.startsWith('- ')) {
+      return `<div class="bullet"><span class="chevron">›</span><span class="bullet-text">${esc(line.slice(2))}</span></div>`;
+    }
+    return `<p class="signal-text">${esc(line)}</p>`;
+  }).join('');
+}
+
+function showError(msg) {
+  const html = `<div class="empty"><div class="empty-icon">⚠</div>
+    <div class="empty-text">Could not load digest<br><span style="color:#EF4444;font-size:11px">${esc(msg)}</span><br><br>
+    Run the GitHub Action to generate the first digest.</div></div>`;
+  document.getElementById('sidebar').innerHTML = html;
+  document.getElementById('main').innerHTML = html;
+}
+
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+loadDigest();
+</script>
+</body>
+</html>
