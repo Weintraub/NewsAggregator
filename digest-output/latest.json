@@ -4,262 +4,35 @@
     {
       "title": "How to run Qwen 3.5 locally",
       "url": "https://unsloth.ai/docs/models/qwen3.5",
-      "points": 377,
+      "points": 382,
       "source": "Hacker News",
       "tag": "HN"
     },
     {
       "title": "CasNum",
       "url": "https://github.com/0x0mer/CasNum",
-      "points": 320,
-      "source": "Hacker News",
-      "tag": "HN"
-    },
-    {
-      "title": "Cloud VM benchmarks 2026",
-      "url": "https://devblog.ecuadors.net/cloud-vm-benchmarks-2026-performance-price-1i1m.html",
-      "points": 305,
-      "source": "Hacker News",
-      "tag": "HN"
-    },
-    {
-      "title": "Apple's 512GB Mac Studio vanishes, a quiet acknowledgment of the RAM shortage",
-      "url": "https://arstechnica.com/gadgets/2026/03/apples-512gb-mac-studio-vanishes-a-quiet-acknowledgement-of-the-ram-shortage/",
-      "points": 301,
-      "source": "Hacker News",
-      "tag": "HN"
-    },
-    {
-      "title": "Warn about PyPy being unmaintained",
-      "url": "https://github.com/astral-sh/uv/pull/17643",
-      "points": 280,
-      "source": "Hacker News",
-      "tag": "HN"
-    },
-    {
-      "title": "I ported Linux to the PS5 and turned it into a Steam Machine",
-      "url": "https://xcancel.com/theflow0/status/2030011206040256841",
-      "points": 229,
-      "source": "Hacker News",
-      "tag": "HN"
-    },
-    {
-      "title": "Based on its own charter, OpenAI should surrender the race",
-      "url": "https://mlumiste.com/general/openai-charter/",
-      "points": 170,
-      "source": "Hacker News",
-      "tag": "HN"
-    },
-    {
-      "title": "FrameBook",
-      "url": "https://fb.edoo.gg",
-      "points": 170,
-      "source": "Hacker News",
-      "tag": "HN"
-    },
-    {
-      "title": "LibreOffice: Request to the European Commission to adhere to its own guidances",
-      "url": "https://blog.documentfoundation.org/blog/2026/03/05/cra-guidances/",
-      "points": 170,
-      "source": "Hacker News",
-      "tag": "HN"
-    },
-    {
-      "title": "Notes on Writing WASM",
-      "url": "https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm",
-      "points": 148,
-      "source": "Hacker News",
-      "tag": "HN"
-    },
-    {
-      "title": "Rijksmuseum researchers discover new painting by Rembrandt van Rijn",
-      "url": "https://www.rijksmuseum.nl/en/press/press-releases/rijksmuseum-researchers-discover-new-painting-by-rembrandt-van-rijn",
-      "points": 111,
-      "source": "Hacker News",
-      "tag": "HN"
-    },
-    {
-      "title": "The Lobster Programming Language",
-      "url": "https://strlen.com/lobster/",
-      "points": 101,
-      "source": "Hacker News",
-      "tag": "HN"
-    },
-    {
-      "title": "SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via CI",
-      "url": "https://arxiv.org/abs/2603.03823",
-      "points": 99,
-      "source": "Hacker News",
-      "tag": "HN"
-    },
-    {
-      "title": "Why can't you tune your guitar? (2019)",
-      "url": "https://www.ethanhein.com/wp/2019/why-cant-you-tune-your-guitar/",
-      "points": 93,
+      "points": 321,
       "source": "Hacker News",
       "tag": "HN"
     },
     {
       "title": "Some Words on WigglyPaint",
       "url": "https://beyondloom.com/blog/onwigglypaint.html",
-      "points": 84,
+      "points": 88,
       "source": "Hacker News",
       "tag": "HN"
     },
     {
-      "title": "Ensuring correctness through the type system",
-      "url": "https://lindbakk.com/blog/ensuring-correctness-through-the-type-system",
-      "points": 1,
-      "tags": [
-        "clojure",
-        "gleam",
-        "java",
-        "testing"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
+      "title": "SigNoz (YC W21) is hiring for engineering, growth and product roles",
+      "url": "https://signoz.io/careers",
+      "points": 0,
+      "source": "Hacker News",
+      "tag": "HN"
     },
     {
-      "title": "Impressions from Mozilla 1.2b (2002)",
-      "url": "https://movq.de/blog/postings/2026-03-08/0/POSTING-en.html",
-      "points": 1,
-      "tags": [
-        "browsers"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "Blocking HTTP1.1",
-      "url": "https://sheep.horse/2026/3/blocking_http1.1_-_some_results.html",
-      "points": 3,
-      "tags": [
-        "networking"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "Bending Emacs - Episode 13: agent-shell charting",
-      "url": "https://xenodium.com/bending-emacs-episode-13-agent-shell-charting",
-      "points": 1,
-      "tags": [
-        "emacs",
-        "vibecoding"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "LibreOffice Writer now supports Markdown",
-      "url": "https://blog.documentfoundation.org/blog/2026/02/04/libreoffice-26-2-is-here/",
-      "points": 7,
-      "tags": [
-        "release"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "Orchestration for zero-human companies",
-      "url": "https://paperclip.ing",
-      "points": 1,
-      "tags": [
-        "ai"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "GNU and the AI reimplementations",
-      "url": "https://antirez.com/news/162",
-      "points": 3,
-      "tags": [
-        "vibecoding"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "Apple's 512GB Mac Studio vanishes, a quiet acknowledgment of the RAM shortage",
-      "url": "https://arstechnica.com/gadgets/2026/03/apples-512gb-mac-studio-vanishes-a-quiet-acknowledgement-of-the-ram-shortage/",
-      "points": 1,
-      "tags": [
-        "hardware",
-        "mac"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "Lightweight protocol to assert authorship of content and vouch for humanity of others",
-      "url": "https://codeberg.org/robida/human.json",
-      "points": 14,
-      "tags": [
-        "ai",
-        "show",
-        "web"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "FrameBook",
-      "url": "https://fb.edoo.gg",
-      "points": 24,
-      "tags": [
-        "hardware"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "We Should Revisit Literate Programming in the Agent Era",
-      "url": "https://silly.business/blog/we-should-revisit-literate-programming-in-the-agent-era/",
-      "points": 5,
-      "tags": [
-        "vibecoding"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "CLI RSS/Atom feed reader inspired by Taskwarrior, synced using git",
-      "url": "https://github.com/kantord/blogtato",
-      "points": 5,
-      "tags": [
-        "release",
-        "unix"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "symbolic derivatives and the rust rewrite of RE#",
-      "url": "https://iev.ee/blog/symbolic-derivatives-and-the-rust-rewrite-of-resharp/",
-      "points": 13,
-      "tags": [
-        "compsci",
-        "rust"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "Adm. Grace Hopper on Future Possibilities: Data, Hardware, Software, and People (1982)",
-      "url": "https://www.nsa.gov/helpful-links/nsa-foia/declassification-transparency-initiatives/historical-releases/view/article/3880193/capt-grace-hopper-on-future-possibilities-data-hardware-software-and-people-1982/",
-      "points": 3,
-      "tags": [
-        "historical",
-        "person"
-      ],
-      "source": "Lobste.rs",
-      "tag": "LB"
-    },
-    {
-      "title": "If It Quacks Like a Package Manager",
-      "url": "https://nesbitt.io/2026/03/08/if-it-quacks-like-a-package-manager.html",
-      "points": 15,
+      "title": "Grow fast and overload things",
+      "url": "https://surfingcomplexity.blog/2026/03/07/grow-fast-and-overload-things/",
+      "points": 4,
       "tags": [
         "devops"
       ],
@@ -267,39 +40,15 @@
       "tag": "LB"
     },
     {
-      "title": "Owner of ICE detention facility sees big opportunity in AI man camps",
-      "url": "https://techcrunch.com/2026/03/08/owner-of-ice-detention-facility-sees-big-opportunity-in-ai-man-camps/",
-      "description": "AI data center developers are increasingly relying on a style of camp popularized as housing for men working in remote oil fields.",
-      "source": "TechCrunch",
-      "tag": "TC"
-    },
-    {
-      "title": "TechCrunch Mobility: Rivian\u2019s R2 gambit",
-      "url": "https://techcrunch.com/2026/03/08/techcrunch-mobility-rivians-r2-gambit/",
-      "description": "Welcome back to TechCrunch Mobility, your hub for all things \u201cfuture of transportation.\u201d",
-      "source": "TechCrunch",
-      "tag": "TC"
-    },
-    {
-      "title": "A roadmap for AI, if anyone will listen",
-      "url": "https://techcrunch.com/2026/03/07/a-roadmap-for-ai-if-anyone-will-listen/",
-      "description": "The Pro-Human Declaration was finalized before last week's Pentagon-Anthropic standoff, but the collision of the two events wasn\u2019t lost on anyone involved.",
-      "source": "TechCrunch",
-      "tag": "TC"
-    },
-    {
-      "title": "Push for $40 smartphones builds momentum, but still faces cost hurdles",
-      "url": "https://techcrunch.com/2026/03/07/push-for-40-smartphones-builds-momentum-but-still-faces-cost-hurdles/",
-      "description": "A coalition of telecom operators and device makers is pushing $40 smartphones to bring up to 20 million people online, but rising component costs threaten the plan.",
-      "source": "TechCrunch",
-      "tag": "TC"
-    },
-    {
-      "title": "Google just gave Sundar Pichai a $692M pay package",
-      "url": "https://techcrunch.com/2026/03/07/google-just-gave-sundar-pichai-a-692m-pay-package/",
-      "description": "Most of it is tied to performance, including new stock incentives linked to Waymo and Wing, its drone delivery venture.",
-      "source": "TechCrunch",
-      "tag": "TC"
+      "title": "Perfect types with `setHTML()`",
+      "url": "https://frederikbraun.de/perfect-types-with-sethtml.html",
+      "points": 15,
+      "tags": [
+        "security",
+        "web"
+      ],
+      "source": "Lobste.rs",
+      "tag": "LB"
     },
     {
       "title": "Grammarly\u2019s \u2018expert review\u2019 is just missing the actual experts",
@@ -335,43 +84,8 @@
       "description": "The fund currently offers retail investors exposure to eight startups, including Mercor, Ramp, and Stripe, with plans to expand its portfolio.",
       "source": "TechCrunch",
       "tag": "TC"
-    },
-    {
-      "title": "X is testing a new ad format that connects posts with products",
-      "url": "https://techcrunch.com/2026/03/06/x-is-testing-a-new-ad-format-that-connects-posts-with-products/",
-      "description": "An ad test on X promotes Musk's Starlink beneath original content.",
-      "source": "TechCrunch",
-      "tag": "TC"
-    },
-    {
-      "title": "Nintendo sues the US government for a refund on tariffs",
-      "url": "https://techcrunch.com/2026/03/06/nintendo-sues-the-u-s-government-for-a-refund-on-tariffs/",
-      "description": "This lawsuit comes after a Supreme Court decision struck down some of the president's sweeping tariffs, which had impacted Nintendo and thousands of other companies.",
-      "source": "TechCrunch",
-      "tag": "TC"
-    },
-    {
-      "title": "Life EV officially owns Rad Power Bikes now",
-      "url": "https://techcrunch.com/2026/03/06/life-ev-officially-owns-rad-power-bikes-now/",
-      "description": "The Rad Power brand is expected to live on.",
-      "source": "TechCrunch",
-      "tag": "TC"
-    },
-    {
-      "title": "OSHA probing fatality at Rivian warehouse",
-      "url": "https://techcrunch.com/2026/03/06/osha-probing-fatality-at-rivian-warehouse/",
-      "description": "A 61-year-old worker died on Thursday after reportedly getting stuck between a tractor trailer and a loading dock.",
-      "source": "TechCrunch",
-      "tag": "TC"
-    },
-    {
-      "title": "Microsoft, Google, Amazon say Anthropic Claude remains available to non-defense customers",
-      "url": "https://techcrunch.com/2026/03/06/microsoft-anthropic-claude-remains-available-to-customers-except-the-defense-department/",
-      "description": "Trump's Department of War feud with Anthropic won't impact other companies that are using Claude via Microsoft and Google products.",
-      "source": "TechCrunch",
-      "tag": "TC"
     }
   ],
-  "digest": "## \ud83d\udd2c Major Technical Developments\n\n- Apple's 512GB Mac Studio quietly discontinued, signaling ongoing DRAM supply constraints that may reflect broader memory allocation priorities toward AI workloads across the industry\n- PyPy maintenance status flagged as concerning by community - the alternative Python implementation's sustainability raises questions about JIT compilation ecosystem fragmentation\n- Linux ported to PS5 as Steam Machine - demonstrates continued erosion of console walled gardens and homebrew/emulation pipeline maturation\n- LibreOffice Writer adds Markdown support while simultaneously petitioning EU Commission on open document standards compliance - strategic positioning for public sector contracts\n- SWE-CI benchmark release for evaluating AI agents on codebase maintenance via continuous integration - new evaluation framework as agent coding tools proliferate\n\n## \ud83d\udcbc Business & Market Signals\n\n- OpenAI hardware exec Caitlin Kalinowski resigns over Pentagon deal, second high-profile departure tied to defense contract controversy - internal fracture accelerating as safety-focused talent exits\n- Sundar Pichai's $692M package includes new stock incentives explicitly tied to Waymo and Wing performance - Google signaling these are core bets, not science projects\n- AI data center developers adopting remote \"man camp\" housing model from oil/gas sector - infrastructure buildout hitting labor logistics constraints in remote locations\n- Robinhood's startup fund (Mercor, Ramp, Stripe exposure) stumbles on NYSE debut - retail appetite for private market access may be softer than anticipated\n- Coalition pushing $40 smartphones to connect 20M users faces component cost headwinds - emerging market connectivity play hitting margin reality\n\n## \ud83d\udccb Case Studies & Deep Dives\n\n- \"Orchestration for zero-human companies\" discussion on Lobste.rs alongside \"Literate Programming in the Agent Era\" - practitioners actively architecting for autonomous code generation and maintenance workflows\n- Cloud VM benchmarks 2026 release provides updated cost/performance data across providers - critical input for infrastructure planning as compute allocation decisions tighten\n\n## \u26a1 Signal vs. Noise\n\nThe OpenAI talent exodus over defense work, combined with Anthropic's Pentagon standoff, suggests the AI safety vs. deployment speed tension is now materially affecting org stability and talent retention - a key diligence factor for any AI-adjacent investment. Meanwhile, Apple's quiet SKU retirement and the man-camp infrastructure story both point to physical constraints (memory, labor, housing) becoming the real bottlenecks in the AI buildout cycle.",
-  "generated_at": "2026-03-08T18:15:54.928302Z"
+  "digest": "## \ud83d\udd2c Major Technical Developments\n\n### How to run Qwen 3.5 locally\nURL: https://unsloth.ai/docs/models/qwen3.5\nLocal inference for Alibaba's latest model signals the commoditization race is accelerating\nUnsloth's documentation for running Qwen 3.5 locally matters because it demonstrates how quickly open-weight models are closing the gap with closed APIs. For PE, this compresses the moat timeline for API-dependent AI startups and shifts value toward fine-tuning infrastructure and enterprise deployment layers.\n\n### Perfect types with `setHTML()`\nURL: https://frederikbraun.de/perfect-types-with-sethtml.html\nBrowser-native sanitization finally gets type-safe, reducing XSS attack surface\nThe setHTML() API represents a meaningful shift in how developers will handle untrusted HTML content. This has downstream implications for security tooling vendors\u2014native browser capabilities erode the TAM for third-party sanitization libraries and security middleware.\n\n## \ud83d\udcbc Business & Market Signals\n\n### OpenAI hardware exec Caitlin Kalinowski quits in response to Pentagon deal\nURL: https://techcrunch.com/2026/03/07/openai-robotics-lead-caitlin-kalinowski-quits-in-response-to-pentagon-deal/\nKey robotics talent exits over defense contracts\u2014signals internal culture fracturing\nKalinowski's departure is notable given her role building OpenAI's robotics ambitions and her prior hardware experience at Meta. This resignation-over-principles pattern echoes Google's 2018 Maven exodus and suggests OpenAI may face continued talent retention headwinds as it pursues government revenue streams.\n\n### Robinhood's startup fund stumbles in NYSE debut\nURL: https://techcrunch.com/2026/03/06/robinhoods-startup-fund-stumbles-in-nyse-debut/\nRetail-to-private-market bridge struggles on day one\u2014watch the secondary pricing signal\nThe fund's exposure to Mercor, Ramp, and Stripe gives retail investors a pseudo-liquidity event for late-stage private tech. Poor debut performance could indicate either broader risk-off sentiment or skepticism about the closed-end fund structure for private exposure. Either way, it's a data point on private market valuation expectations.\n\n### OpenAI delays ChatGPT's 'adult mode' again\nURL: https://techcrunch.com/2026/03/07/openai-delays-chatgpts-adult-mode-again/\nSecond delay on adult content feature reveals regulatory and brand risk calculus\nThe repeated pushback suggests OpenAI is struggling to balance monetization pressure against reputational risk and potential regulatory scrutiny. This hesitation creates runway for competitors like Character.AI or open-source alternatives to capture the adult content market segment.\n\n## \ud83d\udccb Case Studies & Deep Dives\n\n### Grow fast and overload things\nURL: https://surfingcomplexity.blog/2026/03/07/grow-fast-and-overload-things/\nDevOps war story on scaling failures\u2014pattern recognition for infrastructure diligence\nThis piece offers a useful framework for understanding how hypergrowth companies accumulate technical debt in their infrastructure layer. Relevant for evaluating platform companies where uptime SLAs and scaling architecture directly impact enterprise contract retention.\n\n### PopSockets founder David Barnett talks about building a viral business\nURL: https://techcrunch.com/2026/03/07/popsockets-founder-david-barnett-talks-about-building-a-viral-business/\nConsumer hardware playbook from a breakout D2C case study\nBarnett's trajectory from philosophy professor to building a $300M+ revenue accessories business offers a template for evaluating consumer product companies. Key lessons likely center on manufacturing scale, retail channel strategy, and defending against knockoffs\u2014all relevant to current D2C portfolio diligence.\n\n## \u26a1 Signal vs. Noise\n\nThe OpenAI stories dominate today's feed, but the real signal is the tension between commercialization velocity and organizational coherence\u2014talent defections and product delays suggest the company is running hot on multiple fronts simultaneously. Meanwhile, the Qwen local deployment story is the quiet leading indicator: inference commoditization is happening faster than enterprise sales cycles, which will pressure anyone selling API wrappers. The Robinhood fund debut is worth monitoring as a sentiment proxy for private tech valuations reaching retail.",
+  "generated_at": "2026-03-08T18:29:49.499896Z"
 }
