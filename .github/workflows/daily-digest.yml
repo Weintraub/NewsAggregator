@@ -1,8 +1,6 @@
 name: Daily Tech Digest
 
 on:
-  schedule:
-    - cron: "0 11 * * *"  # 6am ET (UTC-5) daily — adjust if your timezone differs
   workflow_dispatch:
 
 permissions:
